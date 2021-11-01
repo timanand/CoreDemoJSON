@@ -1,0 +1,44 @@
+@model CoreDemoJSON.Models.StaffMember 
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+
+<br><br>
+<h5>Update Staff Member</h5>
+<br>
+
+
+<div class="row">
+
+    <!-- 6 means it will take half the size of screen size -->
+	<div class="col-md-4"> 
+		<form asp-action="Edit">
+
+			<div class="form-group"> 
+				<label asp-for="FirstName" class="col_sm-2 col-form-label"></label>
+				<input asp-for="FirstName" class="form-control" placeholder="Please enter your first name" />
+				<span asp-validation-for="FirstName" class="text-danger"></span> <!-- Validation Tag Helper: typing this will then show errors -->
+			</div>
+
+			<div class="form-group"> 
+				<label asp-for="LastName" class="col_sm-2 col-form-label"></label>
+				<input asp-for="LastName" class="form-control" placeholder="Please enter your last name" />
+				<span asp-validation-for="LastName" class="text-danger"></span> <!-- Validation Tag Helper: typing this will then show errors -->
+			</div>
+
+			<br>
+			<div class="form-group"> 
+				<input type="submit" value="Save" class="btn btn-primary" />
+			</div>
+		</form> 	
+	</div>
+</div>
+
+<br>
+<div>
+	<a asp-action="ListStaff"> Back to List of Staff Members</a> 
+</div>
+
+

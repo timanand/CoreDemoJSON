@@ -1,0 +1,21 @@
+@model CoreDemoJSON.Models.StaffMember 
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<p>Do you wish to delete Staff Member: @Model.FirstName @Model.LastName (Id:@Model.Id) ?</p>
+
+
+
+@using (Html.BeginForm())
+{
+    <button type="submit" class="btn btn-danger" 
+    onclick="return confirm('Are you sure you want to delete user: @Model.FirstName  @Model.LastName (Id:@Model.Id) ?' )">Delete</button>       
+}
+
+
+<br>
+<div>
+	<a asp-action="ListStaff"> Back to List of Staff Members</a> 
+</div>
