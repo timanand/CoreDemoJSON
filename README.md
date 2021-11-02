@@ -3,6 +3,13 @@
 CoreDemoJSON is a an ASP.NET Core Application that does CRUD (Create, Read, Update and Delete) operations on a flat file JSON file named 'staff.JSON'.
 
 
+## Pre-Requisite
+The following are mandatory for the CoreDemoEF application to run :
+
+- Microsoft .NET Core 5.0 Runtime or SDK.
+
+
+
 ## Installation
 
 1. Run Visual Studio 2019
