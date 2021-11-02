@@ -4,7 +4,7 @@ CoreDemoJSON is a an ASP.NET Core Application that does CRUD (Create, Read, Upda
 
 
 ## Pre-Requisite
-The following are mandatory for the CoreDemoEF application to run :
+The following are mandatory for the CoreDemoJSON application to run :
 
 - Microsoft .NET Core 5.0 Runtime or SDK.
 
